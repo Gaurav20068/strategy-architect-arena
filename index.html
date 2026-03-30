@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Strategy Architect Arena - MVP</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+    <header>
+        <h1>Strategy Architect Arena</h1>
+        <p>Design Your Edge, Battle the Market</p>
+    </header>
+
+    <div class="container">
+        <aside class="controls">
+            <h2>Strategy Builder</h2>
+            
+            <div class="form-group">
+                <label for="strategySelect">Select Strategy</label>
+                <select id="strategySelect">
+                    <option value="long_call">Long Call</option>
+                    <option value="bull_call_spread">Bull Call Spread</option>
+                    <option value="long_put">Long Put</option>
+                </select>
+            </div>
+
+            <div id="legInputs">
+                </div>
+
+            <button id="calculateBtn" class="primary-btn">Visualize Payoff</button>
+        </aside>
+
+        <main class="dashboard">
+            <div class="chart-container">
+                <canvas id="payoffChart"></canvas>
+            </div>
+
+            <div class="metrics-panel">
+                <div class="metric-card">
+                    <h3>Max Profit</h3>
+                    <p id="maxProfit">--</p>
+                </div>
+                <div class="metric-card">
+                    <h3>Max Loss</h3>
+                    <p id="maxLoss">--</p>
+                </div>
+                <div class="metric-card">
+                    <h3>Breakeven</h3>
+                    <p id="breakeven">--</p>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
