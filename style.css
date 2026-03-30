@@ -1,0 +1,128 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: #0f172a;
+    color: #f8fafc;
+    line-height: 1.6;
+}
+
+header {
+    background-color: #1e293b;
+    padding: 1.5rem 2rem;
+    border-bottom: 1px solid #334155;
+}
+
+header h1 {
+    font-size: 1.8rem;
+    color: #38bdf8;
+}
+
+header p {
+    color: #94a3b8;
+    font-size: 0.9rem;
+}
+
+.container {
+    display: flex;
+    padding: 2rem;
+    gap: 2rem;
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+.controls {
+    flex: 1;
+    background: #1e293b;
+    padding: 1.5rem;
+    border-radius: 8px;
+    border: 1px solid #334155;
+    min-width: 300px;
+}
+
+.controls h2 {
+    margin-bottom: 1.5rem;
+    font-size: 1.2rem;
+}
+
+.form-group {
+    margin-bottom: 1rem;
+}
+
+label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-size: 0.9rem;
+    color: #cbd5e1;
+}
+
+input, select {
+    width: 100%;
+    padding: 0.75rem;
+    background: #0f172a;
+    border: 1px solid #334155;
+    color: white;
+    border-radius: 4px;
+}
+
+.primary-btn {
+    width: 100%;
+    padding: 0.75rem;
+    background: #0284c7;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: bold;
+    margin-top: 1rem;
+    transition: background 0.2s;
+}
+
+.primary-btn:hover {
+    background: #0369a1;
+}
+
+.dashboard {
+    flex: 3;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.chart-container {
+    background: #1e293b;
+    padding: 1.5rem;
+    border-radius: 8px;
+    border: 1px solid #334155;
+    height: 450px;
+}
+
+.metrics-panel {
+    display: flex;
+    gap: 1rem;
+}
+
+.metric-card {
+    flex: 1;
+    background: #1e293b;
+    padding: 1.5rem;
+    border-radius: 8px;
+    border: 1px solid #334155;
+    text-align: center;
+}
+
+.metric-card h3 {
+    font-size: 0.9rem;
+    color: #94a3b8;
+    margin-bottom: 0.5rem;
+}
+
+.metric-card p {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #f8fafc;
+}
